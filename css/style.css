@@ -1,0 +1,67 @@
+/*
+ Susan Todd
+ 5-5-2014
+ PWA-2
+ */
+ /*Colors
+
+lt slate-- gray#708090
+dk grey-- #A9a9a9
+lt blue--#add8e6
+lt steel blue--#b0c4de
+wht smoke-#f5f5f5
+
+
+olive-grey-background-color-#ABA597
+base white-#edf2ee
+lt taupe-#B4A085
+taupe- #87765A
+drk taupe-#160606
+green hover-#A1AC60  
+lt rust hover-#f49440
+rust-CTA-#CC6633
+drk rust -#CC6633
+
+drk olive-#003300 
+
+ */
+ /***********body****************/
+
+body{ 
+	margin:2em;
+
+	background-color: #ABA597;//olive-grey
+	font-family:     Verdana, Arial, sans-serif;
+	font-size:        1em;
+	color :  #87765A;       ;//taupe
+
+
+	}
+/*-------Links-----------------------*/
+a:link { color: #a8ab96     ; }/*unvisited link*/	
+a:hover { color: #A1AC60   ;}/*lt green HOVER link*/
+a:visited { color: #CC6633;  }/*drk rust isited link*/
+
+/*_____headings-----------------------*/
+
+h1 , h2 , h3 {
+	color:  #003300 ;
+	font-size: 4em; ;
+  }
+
+#cta{
+
+	color:#CC6633;/*call to action orange*/
+}  
+
+p{ 
+  	word-wrap:break-word;
+  }
+/*-------buttons-----------------------*/
+button{
+  		font-weight: bold;
+  		color:# A8ab96;
+ 		 }
+
+
+
