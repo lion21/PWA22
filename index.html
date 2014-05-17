@@ -27,26 +27,57 @@
 </head>
 
 <body>
-
+	<img src="images/new_logo_logotypemaker.png"  width="100" height="100" alt="Logo of company">
 	<h1>Welcome...</h1>
 	<p>Please Sign In To Access Site</p>
 	<div id="login"><!--login mod-->
-		<form id="login">
-			<label>Username:</label><input name "signInButton" type="text" id="user"/><br>
-			<label>Password:</label><input name "signInButton" type="password" id="pass"/><br>
-			<input name = "signInButton" type"button" id="signInButton" value="Sign In"><!--this may be a small s -->
+		<form id="login"><!--can use id only 1x on a page, class can be used multiple times
+			<label>Username:</label>
+			<!--the tooltip is being contorled by the js file which ref the css file-->
+
+			<label>Username:</label>
+			<input name="signInButton" 
+					type="text"
+					class="masterTooltip"
+				    title="Enter username"
+					id="user"
+					required/>
+					<br>
+
+
+			<label>Password:</label>
+			<input  name="signInButton"
+					class="masterTooltip"
+					title="Enter password"
+					type="password" 
+					id="pass"
+					required/>
+					<br>
+			<!---sign in button---->
+			<input name = "signInButton" 
+				   type="button" 
+				   id="signInButton" 
+				   value="Sign In"><!--this may be a small s -->
 		</form>
+	</div>
 
 	<div id="cta"><!--call to action-->
 		<h2>Join Now!</h2>
 		<p>Join Now and get a 15 percent discount! Available for Limited Time!</p>
-		<input name = "regbtn" type"button" id="register" value="Sign Up"><!--this may be a small s -->
+		<input name = "regbtn" type"button" id="register" value="Sign Up" class="mastertooltip" title="Join Today!"/><!--this may be a small s -->
 	</div><!--close cta-->	
 
-
+	<div >
+	<h2>Note:</h2>
+	<p>No links on this page except for sign in and call to action</p>
 	</div>
+
+	<div id="tooltipbox" >student </div>
+
+
 	<!-- jquery --><!--script tags go in this area-->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script type="text" src="js/jquery-1.11.1.min.js"></script>
 	<!-- plugins -->
 	
 	<!-- main -->

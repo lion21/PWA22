@@ -1,0 +1,131 @@
+<!--Susan Todd 5-13-2014,Projects App, PWA-2 -->
+ <!--created new pag in week 2-->
+
+<!doctype html>  
+
+<!--
+	The only html element in the body is the container div
+	Your code should load your page templates into the container
+-->
+
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>My App|Projects Page</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- CSS concatenated and minified via ant build script-->
+	<link rel="stylesheet" href="css/style.css?v=1">
+	<!-- end CSS-->
+	
+</head>
+
+<body>
+<header>
+
+	<div class "userid"> Welcome User:
+	</div><!--close div-->
+	<div class="logoutbox">
+	   	<input name="logOut"
+	   		   type="button"
+	   		    id="logOut"
+	   	     value="Sign Out" />   
+	</div><!--close div-->
+
+</header><!--close header-->
+
+	<br>
+	<br>
+
+	<div id="nav">
+		<ul> 
+			<!--linke to dashboard?admin page-->
+			<li><a href="admin.html">Dashboard</a></li>	
+		</ul>
+	</div>
+
+<div class="welcome">
+
+	<p>Add your projects by clicking on plus sign. 
+		Add a graphic here of a  +</p>
+
+	<p><a href= "a" class="modalClick">Add +</a></p>
+</div><!--close welcome div-->
+
+	<br>
+	<br>
+
+<div id="projectlist">
+
+	<h1>Current Projects</h1>
+
+	<div class="projects"></div>
+</div><!--close projectlists-->
+
+
+<div id="overlay">
+	<div id="modal">
+		<span class="close">X</span>
+<h3 class="header">Add Project</h3>
+<div id="add">
+
+	<form id="addForm"><!--create form below-->
+
+			<label>Project Name:</label>
+			<input    name="projectname"  id= "projectName" type="text"/><br>
+	
+
+			<label>Project Description:</label>
+			<input name="projectDescription" id= "projectDescription" type="text" /><br>
+
+
+			<label for "status">Select Status</label><br>
+			
+
+			<!--images for status-->
+			<label class="mystatus">
+				<input type="radio" name="status" id= "urgent"  <img src="images/someImage.png" width="69" hight="75"/></label>
+			<label class="mystatus">
+				<input type="radio" name="status" id= "normal"  <img src="images/someImage.png" width="69" hight="75"/></label>
+			<label class="mystatus">
+				<input type="radio" name="status" id= "delayed"  <img src="images/someImage.png" width="69" hight="75"/></label>
+			<label class="mystatus">
+				<input type="radio" name="status" id= "completed"  <img src="images/someImage.png" width="69" hight="75"/></label>
+	
+	<br>
+	<br>
+		<input name = "addButton" type"button" id="addButton" value="Add" /><!--submit btn-->
+	</form>	
+		
+	</div><!--close reg div-->
+
+
+
+	<!-- jquery --><!--using google apis -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script type="text" src="js/jquery-1.11.1.min.js"></script>
+	<!-- plugins -->
+	
+	<!-- main -->
+	<script type="text/javascript" src="js/main.js"></script>
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
