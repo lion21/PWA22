@@ -30,13 +30,14 @@
 <body>
 <header>
 
-	<div class "userid"> Welcome User:
-	</div><!--close div-->
+	<div class="userid">Welcome User:</div><!--close div-->
+
+
 	<div class="logoutbox">
 	   	<input name="logOut"
 	   		   type="button"
 	   		    id="logOut"
-	   	     value="Sign Out" />   
+	   	     value="Sign Out"/>   
 	</div><!--close div-->
 
 </header><!--close header-->
@@ -44,75 +45,126 @@
 	<br>
 	<br>
 
-	<div id="nav">
-		<ul> 
-			<!--linke to dashboard?admin page-->
-			<li><a href="admin.html">Dashboard</a></li>	
-		</ul>
-	</div>
+	<!--link to dashboard/admin page-->
+	<p><input name="dashboardButton" 
+			  type="button" 
+			  id="dashboardButton" 
+			  value="Dashboard" />
+	</p>	
 
-<div class="welcome">
+	<div class="welcome">
 
 	<p>Add your projects by clicking on plus sign. 
-		Add a graphic here of a  +</p>
+		Add a graphic here of a  + sign here</p>
 
-	<p><a href= "a" class="modalClick">Add +</a></p>
-</div><!--close welcome div-->
+	<p> <a href="#" class="modalClick"> Add + </a> </p><!--corrected href #-->
+
+	</div><!--close welcome div-->
 
 	<br>
 	<br>
 
-<div id="projectlist">
+	<div id="projectlist">
 
 	<h1>Current Projects</h1>
-
 	<div class="projects"></div>
-</div><!--close projectlists-->
+
+	</div><!--close projectlists-->
 
 
-<div id="overlay">
+	<div id="overlay">
 	<div id="modal">
+		<!--code to close the modal screen-->
 		<span class="close">X</span>
-<h3 class="header">Add Project</h3>
-<div id="add">
+
+		<!--header for modal box-->
+		<h3 class="header">Add Project</h3>
+
+	<div id="add">
 
 	<form id="addForm"><!--create form below-->
 
+			<!--code for the 3 form fields of the project-->
 			<label>Project Name:</label>
-			<input    name="projectname"  id= "projectName" type="text"/><br>
+			<input name="projectName"
+			       id="projectName" 
+			       type="text"/>
+			       <br>
+	
+			<label>Project Description:</label>
+			<input name="projectDescription"
+			       id="projectDescription" 
+			       type="text"/>
+			       <br>
+
+			<label>Project Due Date:</label>
+			<input name="projectDueDate"
+			       id="projectDueDate" 
+			       type="text"/>
+			       <br>
 	
 
-			<label>Project Description:</label>
-			<input name="projectDescription" id= "projectDescription" type="text" /><br>
 
-
-			<label for "status">Select Status</label><br>
+			 <!----status of project-->      
+     
+			<label name="status"> Select Status </label>
+			<br>
 			
 
 			<!--images for status-->
 			<label class="mystatus">
-				<input type="radio" name="status" id= "urgent"  <img src="images/someImage.png" width="69" hight="75"/></label>
+				<input type="radio"
+				       name="status"
+				       id= "urgent"  
+				   <img src="images/someImage.png" width="69" hight="75"/>
+			</label>
+
+
 			<label class="mystatus">
-				<input type="radio" name="status" id= "normal"  <img src="images/someImage.png" width="69" hight="75"/></label>
+				<input type="radio"
+				       name="status"
+				       id="normal"
+				   <img src="images/someImage.png" width="69" hight="75"/>
+			</label>
+
+
 			<label class="mystatus">
-				<input type="radio" name="status" id= "delayed"  <img src="images/someImage.png" width="69" hight="75"/></label>
+				<input type="radio"
+				       name="status" 
+				       id="delayed"  
+				 <img src="images/someImage.png" width="69" hight="75"/>
+			</label>
+
+
 			<label class="mystatus">
-				<input type="radio" name="status" id= "completed"  <img src="images/someImage.png" width="69" hight="75"/></label>
-	
+				<input type="radio"
+				       name="status"
+				       id="complete" 
+				   <img src="images/someImage.png" width="69" hight="75"/>
+			</label>
 	<br>
 	<br>
-		<input name = "addButton" type"button" id="addButton" value="Add" /><!--submit btn-->
+
+
+			<!-- add the submit btn-->
+	 		<input name="addButton" 
+			       type="button" 
+			       id="addButton" 
+			       value="Add" /><!--submit btn-->
+
+
+
 	</form>	
-		
 	</div><!--close reg div-->
+
+</div></div><!--need to close the modal & overlay divs-->
 
 
 
 	<!-- jquery --><!--using google apis -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script type="text" src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 	<!-- plugins -->
-	
 	<!-- main -->
 	<script type="text/javascript" src="js/main.js"></script>
   
